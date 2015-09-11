@@ -1,4 +1,4 @@
-# Create an image on a canvas
+# Introduction to the HTML5 Canvas
 In this exercise we will create an image on using HTML canvas tags and the JavaScript canvas API.
 
 ## Exercises
