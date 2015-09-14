@@ -10,6 +10,7 @@
       body {
           background-color: white;
       }
+
     </style>
 
   </head>
@@ -17,19 +18,63 @@
   <body>
 
     <canvas id="canvasOne"></canvas>
+	<canvas id="canvasTwo"></canvas>
+	<canvas id="CircleCanvas1"></canvas>
+	<canvas id="CircleCanvas2"></canvas>
+	<canvas id="CircleSquareCanvas" width="300" height="150"></canvas>
 
     <script type="text/javascript">
 
-      // Gets a handle to the element with id canvasOne.
-      var canvas = document.getElementById("canvasOne");
-      // Set the canvas up for drawing in 2D.
-      var ctx = canvas.getContext("2d");
+									// Gets a handle to the element with id canvasOne.
+									var canvas = document.getElementById("canvasOne");
+									// Set the canvas up for drawing in 2D.
+									var ctx = canvas.getContext("2d");
 
-      // Set the fill colour to bright red.
-      ctx.fillStyle = "rgb(255, 0, 0)";
-      // Create a filled rectangle at co-ordinates (10,10)
-      // with height and width set to 100.
-      ctx.fillRect(10, 10, 100, 100);
+									// Set the fill colour to bright red.
+									//ctx.fillStyle = "rgb(0, 0, 255)";
+									ctx.fillStyle = "rgba(0, 0, 255,0.2)";
+									// Create a filled rectangle at co-ordinates (10,10)
+									// with height and width set to 100.
+									ctx.fillRect(10, 10, 1000, 200);
+									var canvas2 = document.getElementById("canvasTwo");
+									var ctx2 = canvas2.getContext("2d");
+
+									// Set the fill colour to bright red. 
+									//ctx2.fillStyle = "rgb(255, 0, 0)";
+									ctx2.fillStyle = "rgba(255, 0, 0,0.2)";
+									// Create a filled rectangle at co-ordinates (10,10)
+									// with height and width set to 100.
+									ctx2.fillRect(10, 10, 1000, 200);
+
+
+									var c = document.getElementById("CircleCanvas1");
+									var ctx3 = c.getContext("2d");
+									ctx3.fillStyle = "rgba(0, 0, 255,0.2)";
+									ctx3.beginPath();
+									ctx3.arc(95,50,40,0,2*Math.PI);
+									ctx3.stroke();
+									ctx3.fill();
+									var c2 = document.getElementById("CircleCanvas2");
+									var ctx4 = c2.getContext("2d");
+									ctx4.fillStyle = "rgba(255, 0, 0,0.2)";
+									ctx4.beginPath();
+									ctx4.arc(95,50,40,0,2*Math.PI);
+									ctx4.stroke();
+									ctx4.fill();
+
+
+									var c3 = document.getElementById("CircleSquareCanvas");
+									var ctx5 = c3.getContext("2d");
+									var x=100;
+									var y=100;
+									var r=50;
+									ctx5.fillStyle = "rgba(255, 0, 0,0.2)";
+									ctx5.beginPath();
+									ctx5.arc(x,y,r,0,2*Math.PI);
+									ctx5.stroke();
+									ctx5.fill();
+									ctx5.fillRect(r+1, r+1, x, y);
+									
 
     </script>
 
