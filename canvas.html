@@ -17,11 +17,12 @@
 
   <body>
 
-    <canvas id="canvasOne"></canvas>
-	<canvas id="canvasTwo"></canvas>
-	<canvas id="CircleCanvas1"></canvas>
-	<canvas id="CircleCanvas2"></canvas>
-	<canvas id="CircleSquareCanvas" width="300" height="150"></canvas>
+  <div> <canvas id="canvasOne"></canvas>
+	<canvas id="canvasTwo"></canvas></div> 
+	<div><canvas id="CircleCanvas1"></canvas>
+	<canvas id="CircleCanvas2"></canvas></div> 
+	<div><canvas id="CircleSquareCanvas" width="300" height="150"></canvas></div> 
+	<div><canvas id="CircleCanvas3"	setInterval(function1(),5000)></canvas></div> 
 
     <script type="text/javascript">
 
@@ -75,6 +76,24 @@
 									ctx5.fill();
 									ctx5.fillRect(r+1, r+1, x, y);
 									
+									var c4 = document.getElementById("CircleCanvas3");
+									var x1=50;
+									var y1=50;
+									var ctx6 = c4.getContext("2d");
+									ctx6.fillStyle = "rgba(255, 0, 0,0.2)";
+									ctx6.beginPath();
+									ctx6.arc(x1,y1,40,0,2*Math.PI);
+									ctx6.stroke();
+									ctx6.fill();
+													
+								 function function1(){
+									x1+=50;
+									ctx6.beginPath();
+									ctx6.arc(x1,y1,40,0,2*Math.PI);
+									ctx6.stroke();
+									ctx6.fill();
+										}
+													
 
     </script>
 
