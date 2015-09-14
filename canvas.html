@@ -75,13 +75,13 @@
 									ctx5.arc(x,y,r,0,2*Math.PI);
 									ctx5.stroke();
 									ctx5.fill();
-									ctx5.fillRect(r+1, r+1, x, y);
+									ctx5.fillRect(r, r, x+1, y+1);
 									
 									var c4 = document.getElementById("CircleCanvas3");
 									var x1=50;
 									var y1=50;
 									var ctx6 = c4.getContext("2d");
-									ctx6.fillStyle = "rgba(255, 0, 0,0.2)";
+									ctx6.fillStyle = "rgba(0, 0, 255,1)";
 									ctx6.beginPath();
 									ctx6.arc(x1,y1,40,0,2*Math.PI);
 									ctx6.stroke();
@@ -95,6 +95,7 @@
 									ctx6.fill();
 										}
 									var c5 = document.getElementById("PackManCanvas");
+									var ctx7 = c5.getContext("2d");
 									ctx7.beginPath();
 									ctx7.arc(100, 100, 50, 0.25 * Math.PI, 1.25 * Math.PI, false);
 									ctx7.fillStyle = "rgb(255, 255, 0)";
