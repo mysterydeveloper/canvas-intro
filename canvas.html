@@ -22,11 +22,12 @@
 									<div><canvas id="CircleCanvas1"></canvas>
 									<canvas id="CircleCanvas2"></canvas></div> 
 									<div><canvas id="CircleSquareCanvas" width="300" height="150"></canvas></div> 
-										<div><canvas id="CircleCanvas3"	setInterval(function1(),5000)></canvas></div> 
+										<div><canvas id="CircleCanvas3" 	delayedAlert()></canvas></div> 
 									<div><canvas id="PackManCanvas"	></canvas></div> 
 
     <script type="text/javascript">
-
+													
+											////////////////////////SQUARES\\\\\\\\\\\\\\\\\\\\\\
 									// Gets a handle to the element with id canvasOne.
 									var canvas = document.getElementById("canvasOne");
 									// Set the canvas up for drawing in 2D.
@@ -47,8 +48,11 @@
 									// Create a filled rectangle at co-ordinates (10,10)
 									// with height and width set to 100.
 									ctx2.fillRect(10, 10, 1000, 200);
+										
+									////////////////////////SQUARES END\\\\\\\\\\\\\\\\\\\\\\		
+												
 
-
+									////////////////////////CIRCLES\\\\\\\\\\\\\\\\\\\\\\
 									var c = document.getElementById("CircleCanvas1");
 									var ctx3 = c.getContext("2d");
 									ctx3.fillStyle = "rgba(0, 0, 255,0.2)";
@@ -63,8 +67,10 @@
 									ctx4.arc(95,50,40,0,2*Math.PI);
 									ctx4.stroke();
 									ctx4.fill();
+									
+									////////////////////////CIRCLES END\\\\\\\\\\\\\\\\\\\\\\
 
-
+									////////////////////////CIRCLE INSIDE SQUARE\\\\\\\\\\\\\\\\\\\\\\
 									var c3 = document.getElementById("CircleSquareCanvas");
 									var ctx5 = c3.getContext("2d");
 									var x=100;
@@ -76,7 +82,9 @@
 									ctx5.stroke();
 									ctx5.fill();
 									ctx5.fillRect(r, r, x+1, y+1);
-									
+											////////////////////////CIRCLE INSIDE SQUARE END\\\\\\\\\\\\\\\\\\\\\\
+													
+									/////////////////////////MOVING CIRCLE\\\\\\\\\\\\\\\\\\\\\\
 									var c4 = document.getElementById("CircleCanvas3");
 									var x1=50;
 									var y1=50;
@@ -86,14 +94,13 @@
 									ctx6.arc(x1,y1,40,0,2*Math.PI);
 									ctx6.stroke();
 									ctx6.fill();
+										
+
 													
-								 function function1(){
-									x1+=50;
-									ctx6.beginPath();
-									ctx6.arc(x1,y1,40,0,2*Math.PI);
-									ctx6.stroke();
-									ctx6.fill();
-										}
+								/////////////////////////MOVING CIRCLE END\\\\\\\\\\\\\\\\\\\\\\						
+													
+													
+									/////////////////////////PAC-MAN\\\\\\\\\\\\\\\\\\\\\\
 									var c5 = document.getElementById("PackManCanvas");
 									var ctx7 = c5.getContext("2d");
 									ctx7.beginPath();
@@ -107,6 +114,7 @@
 									ctx7.arc(100, 75, 10, 0, 2 * Math.PI, false);
 									ctx7.fillStyle = "rgb(0, 0, 0)";
 									ctx7.fill();
+										/////////////////////////PAC-MAN END\\\\\\\\\\\\\\\\\\\\\\
     </script>
 
   </body>
