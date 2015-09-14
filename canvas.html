@@ -17,12 +17,13 @@
 
   <body>
 
-  <div> <canvas id="canvasOne"></canvas>
-	<canvas id="canvasTwo"></canvas></div> 
-	<div><canvas id="CircleCanvas1"></canvas>
-	<canvas id="CircleCanvas2"></canvas></div> 
-	<div><canvas id="CircleSquareCanvas" width="300" height="150"></canvas></div> 
-	<div><canvas id="CircleCanvas3"	setInterval(function1(),5000)></canvas></div> 
+									<div> <canvas id="canvasOne"></canvas>
+									<canvas id="canvasTwo"></canvas></div> 
+									<div><canvas id="CircleCanvas1"></canvas>
+									<canvas id="CircleCanvas2"></canvas></div> 
+									<div><canvas id="CircleSquareCanvas" width="300" height="150"></canvas></div> 
+										<div><canvas id="CircleCanvas3"	setInterval(function1(),5000)></canvas></div> 
+									<div><canvas id="PackManCanvas"	></canvas></div> 
 
     <script type="text/javascript">
 
@@ -93,8 +94,18 @@
 									ctx6.stroke();
 									ctx6.fill();
 										}
-													
-
+									var c5 = document.getElementById("PackManCanvas");
+									ctx7.beginPath();
+									ctx7.arc(100, 100, 50, 0.25 * Math.PI, 1.25 * Math.PI, false);
+									ctx7.fillStyle = "rgb(255, 255, 0)";
+									ctx7.fill();
+									ctx7.beginPath();
+									ctx7.arc(100, 100, 50, 0.75 * Math.PI, 1.75 * Math.PI, false);
+									ctx7.fill();
+									ctx7.beginPath();
+									ctx7.arc(100, 75, 10, 0, 2 * Math.PI, false);
+									ctx7.fillStyle = "rgb(0, 0, 0)";
+									ctx7.fill();
     </script>
 
   </body>
