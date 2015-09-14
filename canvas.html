@@ -26,7 +26,7 @@
 									<div><canvas id="PackManCanvas"	></canvas></div> 
 
     <script type="text/javascript">
-													
+
 											////////////////////////SQUARES\\\\\\\\\\\\\\\\\\\\\\
 									// Gets a handle to the element with id canvasOne.
 									var canvas = document.getElementById("canvasOne");
@@ -48,9 +48,9 @@
 									// Create a filled rectangle at co-ordinates (10,10)
 									// with height and width set to 100.
 									ctx2.fillRect(10, 10, 1000, 200);
-										
+
 									////////////////////////SQUARES END\\\\\\\\\\\\\\\\\\\\\\		
-												
+
 
 									////////////////////////CIRCLES\\\\\\\\\\\\\\\\\\\\\\
 									var c = document.getElementById("CircleCanvas1");
@@ -67,7 +67,7 @@
 									ctx4.arc(95,50,40,0,2*Math.PI);
 									ctx4.stroke();
 									ctx4.fill();
-									
+
 									////////////////////////CIRCLES END\\\\\\\\\\\\\\\\\\\\\\
 
 									////////////////////////CIRCLE INSIDE SQUARE\\\\\\\\\\\\\\\\\\\\\\
@@ -83,7 +83,7 @@
 									ctx5.fill();
 									ctx5.fillRect(r, r, x+1, y+1);
 											////////////////////////CIRCLE INSIDE SQUARE END\\\\\\\\\\\\\\\\\\\\\\
-													
+
 									/////////////////////////MOVING CIRCLE\\\\\\\\\\\\\\\\\\\\\\
 									var c4 = document.getElementById("CircleCanvas3");
 									var x1=50;
@@ -94,12 +94,23 @@
 									ctx6.arc(x1,y1,40,0,2*Math.PI);
 									ctx6.stroke();
 									ctx6.fill();
-										
+									var intervalID = setTimeout(function() { MovingCircle(); }, 5000);
+									function MovingCircle(){
 
-													
-								/////////////////////////MOVING CIRCLE END\\\\\\\\\\\\\\\\\\\\\\						
-													
-													
+									x1+=50;
+									ctx6.fillStyle = "rgba(0, 0, 255,1)";
+									ctx6.beginPath();
+									ctx6.arc(x1,y1,40,0,2*Math.PI);
+									ctx6.stroke();
+									ctx6.fill();
+
+									
+
+									}
+
+									/////////////////////////MOVING CIRCLE END\\\\\\\\\\\\\\\\\\\\\\						
+
+
 									/////////////////////////PAC-MAN\\\\\\\\\\\\\\\\\\\\\\
 									var c5 = document.getElementById("PackManCanvas");
 									var ctx7 = c5.getContext("2d");
