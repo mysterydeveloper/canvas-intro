@@ -26,7 +26,9 @@ Save each exercise as a separate source files:
 
 ## Advanced exercises
 
-1. Draw Pac-Man.
+1. Start with a blue circle at the top left of the Canvas, and after three seconds move the circle 50px to the right.
+
+1. Draw Pac-Man on a Canvas using JavaScript.
 
 ## Note
 
