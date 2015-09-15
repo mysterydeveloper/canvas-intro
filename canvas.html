@@ -10,7 +10,11 @@
       body {
           background-color: white;
       }
-
+					canvas{
+							border: 1px solid black;
+						height: 200px;
+						width: 500px;
+					}
     </style>
 
   </head>
@@ -21,33 +25,34 @@
 									<canvas id="canvasTwo"></canvas></div> 
 									<div><canvas id="CircleCanvas1"></canvas>
 									<canvas id="CircleCanvas2"></canvas></div> 
-									<div><canvas id="CircleSquareCanvas" width="300" height="150"></canvas></div> 
-										<div><canvas id="CircleCanvas3" 	delayedAlert()></canvas></div> 
+									<div><canvas id="CircleSquareCanvas"></canvas></div> 
+										<div><canvas id="CircleCanvas3"></canvas></div> 
 									<div><canvas id="PackManCanvas"	></canvas></div> 
 
     <script type="text/javascript">
-
+					
 											////////////////////////SQUARES\\\\\\\\\\\\\\\\\\\\\\
 									// Gets a handle to the element with id canvasOne.
 									var canvas = document.getElementById("canvasOne");
 									// Set the canvas up for drawing in 2D.
+							
 									var ctx = canvas.getContext("2d");
-
+									ctx.strokeRect(0,0,1000,200);
 									// Set the fill colour to bright red.
 									//ctx.fillStyle = "rgb(0, 0, 255)";
-									ctx.fillStyle = "rgba(0, 0, 255,0.2)";
+									ctx.fillStyle = "rgba(0, 0, 255,0.8)";
 									// Create a filled rectangle at co-ordinates (10,10)
 									// with height and width set to 100.
-									ctx.fillRect(10, 10, 1000, 200);
+									ctx.fillRect(00, 0, 1000, 200);
 									var canvas2 = document.getElementById("canvasTwo");
 									var ctx2 = canvas2.getContext("2d");
 
 									// Set the fill colour to bright red. 
 									//ctx2.fillStyle = "rgb(255, 0, 0)";
-									ctx2.fillStyle = "rgba(255, 0, 0,0.2)";
+									ctx2.fillStyle = "rgba(255, 0, 0,0.8)";
 									// Create a filled rectangle at co-ordinates (10,10)
 									// with height and width set to 100.
-									ctx2.fillRect(10, 10, 1000, 200);
+									ctx2.fillRect(0, 0, 1000, 200);
 
 									////////////////////////SQUARES END\\\\\\\\\\\\\\\\\\\\\\		
 
@@ -77,11 +82,13 @@
 									var y=100;
 									var r=50;
 									ctx5.fillStyle = "rgba(255, 0, 0,0.2)";
+									ctx5.fillRect(r, r, x+1, y+1);
+									ctx5.fillStyle = "rgba(0, 0, 255,0.2)";
 									ctx5.beginPath();
 									ctx5.arc(x,y,r,0,2*Math.PI);
 									ctx5.stroke();
 									ctx5.fill();
-									ctx5.fillRect(r, r, x+1, y+1);
+									
 											////////////////////////CIRCLE INSIDE SQUARE END\\\\\\\\\\\\\\\\\\\\\\
 
 									/////////////////////////MOVING CIRCLE\\\\\\\\\\\\\\\\\\\\\\
@@ -96,7 +103,7 @@
 									ctx6.fill();
 									var intervalID = setTimeout(function() { MovingCircle(); }, 5000);
 									function MovingCircle(){
-									ctx6.clearRect(9,9,r*2,r*2);
+									ctx6.clearRect(h,9,r*2,r*2);
 									x1+=50;
 									ctx6.fillStyle = "rgba(0, 0, 255,1)";
 									ctx6.beginPath();
@@ -124,6 +131,7 @@
 									ctx7.fillStyle = "rgb(0, 0, 0)";
 									ctx7.fill();
 										/////////////////////////PAC-MAN END\\\\\\\\\\\\\\\\\\\\\\
+				
     </script>
 
   </body>
