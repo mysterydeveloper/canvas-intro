@@ -38,4 +38,4 @@ Save each exercise as a separate source file:
 
 - The best source for learning is the Tutorial section in the above link: [Canvas Tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial).
 
-- For a flavour of what's to come, look at this: [Bouncing ball](http://learnonline.gmit.ie/mod/url/view.php?id=24783).
+- For a flavour of what's to come, look at this: [Bouncing ball](https://developer.cdn.mozilla.net/media/uploads/demos/S/u/Subhajit/de836b7bca90f02096d828382d3b5040/canvas-animation_1441379968_demo_package/index.html).
