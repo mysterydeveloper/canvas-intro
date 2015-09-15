@@ -14,6 +14,8 @@ Save each exercise as a separate source files:
 
 1. Change the width of the square to 1000px.
 
+1.Draw a black border around the canvas, using CSS.
+
 1. Use the JavaScript console to draw a second square in red.
 
 1. Modify the HTML file to draw the second square in red automatically.
