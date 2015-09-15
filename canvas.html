@@ -96,16 +96,14 @@
 									ctx6.fill();
 									var intervalID = setTimeout(function() { MovingCircle(); }, 5000);
 									function MovingCircle(){
-
+									ctx6.clearRect(9,9,r*2,r*2);
 									x1+=50;
 									ctx6.fillStyle = "rgba(0, 0, 255,1)";
 									ctx6.beginPath();
 									ctx6.arc(x1,y1,40,0,2*Math.PI);
 									ctx6.stroke();
 									ctx6.fill();
-
-									
-
+										
 									}
 
 									/////////////////////////MOVING CIRCLE END\\\\\\\\\\\\\\\\\\\\\\						
