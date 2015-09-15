@@ -1,8 +1,8 @@
 # Introduction to the HTML5 Canvas
-In this exercise we will create an image on using HTML canvas tags and the JavaScript canvas API.
+In this exercise we will create an image using HTML canvas tags and the JavaScript canvas API.
 
 ## Exercises
-Save each exercise as a separate source files:
+Save each exercise as a separate source file:
 
 1. Download the files in this repository, unzip them, and open the containing directory in Brackets, Atom or Visual Studio Code.
 
@@ -13,6 +13,8 @@ Save each exercise as a separate source files:
 1. Change the height of the square to 200px.
 
 1. Change the width of the square to 1000px.
+
+1. Draw a black border around the canvas, using CSS.
 
 1. Use the JavaScript console to draw a second square in red.
 
