@@ -37,3 +37,5 @@ Save each exercise as a separate source file:
 - The source code here is adapted from Mozilla's documents here: [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API).
 
 - The best source for learning is the Tutorial section in the above link: [Canvas Tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial).
+
+- For a flavour of what's to come, look at this: [Bouncing ball](http://learnonline.gmit.ie/mod/url/view.php?id=24783).
